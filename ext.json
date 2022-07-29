@@ -1,0 +1,18 @@
+{
+  "extEnable": false,
+  "extAppid": "",
+  "directCommit": true,
+  "ext": {
+    "config": {
+      "site_name": "",
+      "site_id": "",
+      "site_host": "",
+      "site_alias": "",
+      "saas_site_host": "",
+      "saas_api": ""
+    },
+    "setting": {}
+  },
+  "extPages": {},
+  "plugins": {}
+}

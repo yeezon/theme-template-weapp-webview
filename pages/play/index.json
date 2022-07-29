@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tx-video": "plugin://tencentvideo/video"
+  },
+  "backgroundColor": "#000000",
+  "navigationBarBackgroundColor": "#000000"
+}

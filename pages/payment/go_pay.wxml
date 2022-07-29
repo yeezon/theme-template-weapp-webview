@@ -1,0 +1,14 @@
+
+<view class="go_pay">
+  <view class="title">{{ shopName || '--' }}</view>
+  <view class="line"></view>
+  <view class="order_no">订单号：{{ orderNo || '--' }}</view>
+  <view class="cont">
+    <view wx:if="{{ !isPaid }}" class="name">支付金额</view>
+    <view wx:else class="name">成功支付</view>
+    <view class="money"><text class="money-cont"><text class="currency">￥</text><text class="sum">{{ sum || '--' }}</text></text></view>
+    <button wx:if="{{ !isPaid }}" class="pay" type="warn" loading="{{ isPaying }}" disabled="{{ isPaying }}" bindtap="fnPay"> 支付 </button>
+    <button wx:else class="paid" type="primary" bindtap="fnBack"> 返回 </button>
+    <view class="tips">{{ err || '　' }}</view>
+  </view>
+</view>

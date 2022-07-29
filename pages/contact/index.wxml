@@ -1,0 +1,11 @@
+
+<view class="contact">
+  <view class="cont" wx:if="{{ content }}">
+    <scroll-view class="scroll" scroll-y="{{ true }}" enable-back-to-top="{{ true }}">
+      <rich-text class="rich_text" nodes="{{ content }}"></rich-text>
+    </scroll-view>
+  </view>
+  <view class="button">
+    <button type="primary" open-type="contact">联系客服</button>
+  </view>
+</view>

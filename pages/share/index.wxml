@@ -1,0 +1,28 @@
+
+<!-- 生成 QRCode 用 -->
+<canvas canvas-id="qr-code-temp" class="qr-code-temp"></canvas>
+
+<view class="share">
+  <canvas class="canvas" canvas-id="shareCanvas" style="width: {{oDraw.width / oDraw.nPixelRatio}}px; height: {{oDraw.height / oDraw.nPixelRatio}}px;"></canvas>
+  <view class="cont">
+    <image class="share-img" wx:if="{{img}}" src="{{img}}" style="width: {{oDraw.width / oDraw.nPixelRatio}}px; height: {{oDraw.height / oDraw.nPixelRatio}}px;" mode="aspectFit" bindload="onImgLoaded"></image>
+  </view>
+  <view class="save">
+    <button wx:if="{{oInfo.title}}" class="btn i-link" open-type="share" hover-class="btn-hover">分享给朋友</button>
+    <button class="btn i-img" hover-class="btn-hover" bindtap="fnSaveImg">保存图片分享</button>
+  </view>
+</view>
+
+<!-- Tips -->
+<com-mask show="{{showTips}}">
+  <view class="confirm-model">
+    <view class="title">获取授权</view>
+    <view class="content">
+      <view class="text">请允许授权保存图片到你的相册</view>
+    </view>
+    <view class="bottom ">
+      <button bindtap="closeTips">我就不</button>
+      <button class="confirm-btn" open-type="openSetting" bindopensetting="fnOpenSetting" bindtap="closeTips">去授权</button>
+    </view>
+  </view>
+</com-mask>

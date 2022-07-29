@@ -1,0 +1,165 @@
+page {
+  background-color: #f8f8f8;
+}
+.qr-code-temp{
+  width: 512px;
+  height: 512px;
+  visibility: hidden;
+  position: absolute;
+  top: -1000%;
+  left: -1000%;
+}
+.canvas {
+  visibility: hidden;
+  position: absolute;
+  top: -1000%;
+  right: -1000%;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 330rpx);
+}
+
+.share-img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.save {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  padding: 0 0 130rpx;
+  width: 100%;
+  line-height: 0;
+}
+
+/* 小程序奇葩去边框 */
+.btn::after{ border: none; }
+
+.btn {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  font-size: 32rpx;
+  border: none;
+  color: #fff;
+  background-color: #1AAD16;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+}
+.btn.i-link,
+.btn.i-link ~ .btn.i-img {
+  margin: 0 2%;
+  width: 40%;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  font-size: 30rpx;
+}
+.btn.i-link {
+  background-color: #f5871f;
+}
+.btn-hover {
+  /*background-color: #1AAD16;*/
+}
+
+
+
+/* Model  */
+
+.confirm-model {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  width: 80%;
+  border-radius: 8rpx;
+  background: #fff;
+  overflow: hidden;
+  transform: translate(-50%);
+  z-index: 998;
+}
+
+.confirm-model .title {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #262626;
+  border-bottom: 1rpx solid #eee;
+}
+
+.confirm-model .content {
+  display: flex;
+  align-items: center;
+  padding: 50rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.confirm-model .content .text {
+  flex: 1;
+}
+
+.confirm-model .content::before {
+  content: '';
+  display: inline-flex;
+  width: 15rpx;
+  height: 15rpx;
+  margin-right: 10rpx;
+  border-radius: 100%;
+  background: #999;
+}
+
+.confirm-model .bottom {
+  display: flex;
+  border-top: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+
+.confirm-model .bottom button {
+  flex: 1;
+  height: 88rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 30rpx;
+  border-radius: 0;
+  color: #333;
+  border-right: 1rpx solid #eee;
+  background: #fff;
+}
+
+.confirm-model .bottom button.confirm-btn {
+  color: #fe384f;
+}
+
+.confirm-model .bottom button:last-child {
+  border-right: none;
+}
+
+.confirm-model .bottom button::after {
+  border: none;
+}
+
+/* End Model  */
+
+

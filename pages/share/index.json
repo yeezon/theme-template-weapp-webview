@@ -1,0 +1,10 @@
+
+{
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "分享",
+  "backgroundColor": "#f8f8f8",
+  "usingComponents": {
+    "com-mask": "../../components/mask/index"
+  }
+}

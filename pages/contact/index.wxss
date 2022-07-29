@@ -1,0 +1,42 @@
+
+page {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cont {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll {
+  margin: 0 15px;
+  width: calc(100% - 30px);
+  height: 100%;
+}
+
+.button {
+  padding: 25px 25px 35px;
+}
+
+.rich_text {
+  width: 100%;
+}
+
+.rich_text .rt-img {
+  max-width: 100%;
+  vertical-align: middle;
+}

@@ -1,0 +1,7 @@
+<view class="login">
+  <image class="logo" src="../../assets/wechat.png"></image>
+  <view class="cont">
+    <button type="primary" loading="{{ isLoading }}" disabled="{{ isLoading }}" bindtap="fnAuth"> 登录 </button>
+    <view class="tips">{{ err || '　' }}</view>
+  </view>
+</view>

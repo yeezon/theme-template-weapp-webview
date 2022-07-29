@@ -1,0 +1,84 @@
+
+page {
+  background-color: #f8f8f8;
+}
+
+.title {
+  margin: 38px 0 6px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  color: #bebebe;
+}
+
+.line {
+  margin: 0 auto;
+  width: 4em;
+  height: 50px;
+  border: 0 solid #d8d8d8;
+  border-width: 1px 0 0;
+  font-size: 16px;
+}
+
+.order_no {
+  margin: 0 15px;
+  padding: 16px 15px;
+  line-height: 1;
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  border: 0 solid #d8d8d8;
+  border-width: 0 0 .5px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.cont {
+  margin: 0 15px;
+  padding: 36px 30px 40px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.name {
+  margin: 0 0 18px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.money {
+  text-align: center;
+  line-height: 1;
+  font-size: 0;
+  word-break: break-all;
+}
+.money-cont {
+  display: inline-block;
+  position: relative;
+}
+.currency {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -26px;
+  font-size: 22px;
+}
+.sum {
+  display: inline-block;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.pay,
+.paid {
+  margin: 40px 0 0;
+}
+
+.tips {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+

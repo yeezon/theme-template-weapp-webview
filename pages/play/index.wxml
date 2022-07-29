@@ -1,0 +1,5 @@
+
+<view class="play-view">
+  <tx-video wx:if="{{ oConfig.vid }}" class="video" playerid="txv" vid="{{ oConfig.vid }}" controls="{{ oConfig.controls }}" autoplay="{{ oConfig.autoplay }}" objectFit="{{ oConfig.objectFit }}"></tx-video>
+  <video wx:else class="video" playerid="v" src="{{ oConfig.src }}" controls="{{ oConfig.controls }}" autoplay="{{ oConfig.autoplay }}" objectFit="{{ oConfig.objectFit }}"></video>
+</view>
